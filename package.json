@@ -1,23 +1,20 @@
 {
-  "name": "smart-waste-management",
+  "name": "smart-waste-management-client",
+  "private": true,
   "version": "1.0.0",
-  "description": "Full-Stack MERN Smart Waste Management System",
+  "type": "module",
   "scripts": {
-    "server": "npm run start --prefix server",
-    "server:dev": "npm run dev --prefix server",
-    "client": "npm run dev --prefix client",
-    "seed": "npm run seed --prefix server",
-    "install:all": "npm install --prefix server && npm install --prefix client"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "mern",
-    "smart-waste",
-    "garbage-collection",
-    "mongodb",
-    "express",
-    "react",
-    "node"
-  ],
-  "author": "Smart Waste Tech Team",
-  "license": "MIT"
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.11"
+  }
 }
